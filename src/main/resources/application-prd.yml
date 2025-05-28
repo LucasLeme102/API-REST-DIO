@@ -9,3 +9,6 @@ spring:
       ddl-auto: validate  # ou "update" se quiser manter dados entre execuções
 server:
   port: ${PORT:8080}
+  spring:
+    profiles:
+      active: ${SPRING_PROFILES_ACTIVE:prd} #
