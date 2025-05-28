@@ -7,3 +7,5 @@ spring:
     open-in-view: false
     hibernate:
       ddl-auto: validate  # ou "update" se quiser manter dados entre execuções
+server:
+  port: ${PORT:8080}
